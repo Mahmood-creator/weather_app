@@ -10,10 +10,11 @@ User able to create/edit/view/list/remove (CRUDLS) task(task is created to insid
 User cannot access to-do/task list of other users<br>
 Project include some feature tests<br>
 Added ability to upload files/images for task<br>
+Added ability to download pdf todos files<br>
 
 
 ## Setup
-- `git clone git@github.com:shsma/laravel-docker.git`
+- `git clone git@github.com:Mahmood-creator/todo-app.git`
 - `cd todo-project`
 - `docker-compose up -d`
 - `docker exec app composer install`
