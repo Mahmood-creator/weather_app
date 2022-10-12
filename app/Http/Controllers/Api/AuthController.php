@@ -21,6 +21,7 @@ class AuthController extends Controller
     public function login(LoginRequest $request)
     {
         $credentials = $request->validated();
+
         if (!$token = auth()->attempt($credentials)) {
             return response()->errorJson('Email or password is incorrect!|301', 401);
         }
