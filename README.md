@@ -15,10 +15,10 @@ Added ability to download pdf todos files<br>
 
 ## Setup
 - `git clone git@github.com:Mahmood-creator/todo-app.git`
-- `cd todo-project`
+- `cd todo-app`
 - `docker-compose up -d`
-- `docker exec app composer install`
+- `docker exec todo-app-todo-app-1 composer install`
 - `cp .env.example .env`
-- `docker-compose exec app php artisan key:generate`
+- `docker exec todo-app-todo-app-1 php artisan key:generate`
 
 Now that all containers are up
