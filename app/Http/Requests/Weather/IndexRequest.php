@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Task;
+namespace App\Http\Requests\Weather;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreRequest extends FormRequest
+class IndexRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +24,11 @@ class StoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'todo_id' => 'required|integer|exists:todos,id',
-            'file' => 'nullable|string|max:255',
-            'title' => 'required|string|max:255',
-            'description' => 'required|string|max:255'
+            'per_page' => 'numeric',
+            'lon' => 'required|numeric',
+            'lat' => 'required|numeric',
+            'lang' => 'required|string',
+            'units' => 'string',
         ];
     }
 }
